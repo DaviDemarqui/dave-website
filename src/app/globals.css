@@ -45,3 +45,8 @@ body::-webkit-scrollbar-thumb:horizontal {
   animation: blink .7s infinite;
 }
 
+.nonInteractive {
+  user-select: none;
+  overflow: hidden; /* Optionally, hide overflow to prevent scrolling */
+}
+
