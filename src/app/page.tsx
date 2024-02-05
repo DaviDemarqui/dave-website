@@ -103,7 +103,7 @@ export default function Home() {
                 <div className="text-white text-center">
                   <h1 className="lg:text-3xl">{project.name}</h1>
                   <p className="text-green-500 mb-5 text-sm">{project.description}</p>
-                  <a href={project.githubLink} target="_blank" className="border border-white hover:bg-white hover:text-black py-2 px-10">See Repository</a>
+                  <a href={project.githubLink} target="_blank" className="border border-white hover:bg-white hover:text-black py-2 lg:px-10 px-5">See Repository</a>
                 </div>
               </div>
             </div>
