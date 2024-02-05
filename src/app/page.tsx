@@ -1,13 +1,6 @@
 import Image from "next/image";
 
 export default function Home() {
-  const imageUrls = [
-    "https://media1.giphy.com/media/tHjHlQXMktlhwuZJun/giphy.gif",
-    "https://i.pinimg.com/originals/46/31/2b/46312b0df5d9b8f9bd6ad946574a0a81.gif",
-    "https://i.redd.it/hs9dqj9nbpqb1.gif",
-    "https://i.gifer.com/embedded/download/FIQD.gif",
-    // Add more image URLs as needed
-  ];
 
   const projects = [
     {
@@ -22,7 +15,6 @@ export default function Home() {
       imagePath: "/we-fund.gif",
       githubLink: "https://github.com/DaviDemarqui/we-fund"
     },
-    // Add more filenames as needed
   ];
 
   const currentYear = new Date().getFullYear();
@@ -33,12 +25,12 @@ export default function Home() {
         <Image
           src="/MOSHED-DAVE.gif"
           width={200}
-          height={400} // Path to the GIF in the public directory
+          height={400}
           alt="MOSHED-DAVE-1 GIF"
           className="my-10 rounded-b-full"
           style={{ pointerEvents: 'none' }}
         />      
-        {/* Content for the first section */}
+
         <h1 className="text-white text-4xl">Hi, I&apos;m Davi D.Braga<span className="animate-blink ml-3">█</span></h1>
         <p className="text-green-500">Full-Stack Software Developer </p>
 
@@ -98,9 +90,8 @@ export default function Home() {
         <div className="h-full">
           {/* Render the list of images */}
           {projects.map((project, index) => (
-            <div className="relative w-full">
+            <div key={index} className="relative w-full">
               <Image
-                key={index}
                 src={project.imagePath} // Dynamic path to the local GIF file
                 alt={`Image ${index + 1}`}
                 width={100} // Adjust width as needed
