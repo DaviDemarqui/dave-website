@@ -26,7 +26,7 @@ export default function Home() {
           style={{ pointerEvents: 'none' }}
         />      
         {/* Content for the first section */}
-        <h1 className="text-white text-4xl">Hi, I'm Davi D.Braga<span className="animate-blink ml-3">█</span></h1>
+        <h1 className="text-white text-4xl">Hi, I&apos;m Davi D.Braga<span className="animate-blink ml-3">█</span></h1>
         <p className="text-green-500">Full-Stack Software Developer </p>
 
         <h1 className="text-white text-2xl pt-10">About Me</h1>
@@ -70,13 +70,11 @@ export default function Home() {
           <li>Instagram: <a target="_blank" href="https://www.instagram.com/iamdaviddb/" className="text-rose-500 hover:underline">instagram.com/iamdaviddb</a></li>
           <li>Linkedin: <a target="_blank" href="https://br.linkedin.com/in/davi-demarqui-a875a2218?trk=people_directory" className="text-blue-500 hover:underline">linkedin.com/in/davi-demarqui</a></li>
           <li>Discord: <a target="_blank" href="https://discordapp.com/users/481561932093063178" className="text-indigo-500 hover:underline">discordapp.com/users/481561932093063178</a></li>
-
-
         </ul>
       </div>
       <div className="w-1/2 bg-black overflow-y-scroll">
         {/* Content for the second section */}
-        <h1 className="text-white text-2xl p-8">~/see/my/projects$<span className="animate-blink ml-3">█</span></h1>
+        <h1 className="text-white text-2xl p-8">~/see/my/projects<span className="animate-blink ml-3">█</span></h1>
         {/* Container for the list of images with scrolling */}
         <div className="h-full">
           {/* Render the list of images */}
