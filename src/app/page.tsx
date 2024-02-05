@@ -9,14 +9,27 @@ export default function Home() {
     // Add more image URLs as needed
   ];
 
-  const gifFilenames = [
-    "/kernel.gif",
-    "/we-fund.gif",
+  const projects = [
+    {
+      name: "Kernel Network",
+      description: "Social Media Platform",
+      imagePath: "/kernel.gif",
+      githubLink: "https://github.com/DaviDemarqui/kernel-network"
+    },
+    {
+      name: "WeFund",
+      description: "Web3 crowdfunding platform based on Kickstarter",
+      imagePath: "/we-fund.gif",
+      githubLink: "https://github.com/DaviDemarqui/we-fund"
+    },
     // Add more filenames as needed
   ];
+
+  const currentYear = new Date().getFullYear();
+
   return (
 <div className="flex h-screen nonInteractive">
-      <div className="w-1/2 bg-black overflow-y-scroll p-8">
+      <div className="w-1/2 bg-black overflow-y-scroll p-5 lg:pr-28">
         <Image
           src="/MOSHED-DAVE.gif"
           width={200}
@@ -31,8 +44,9 @@ export default function Home() {
 
         <h1 className="text-white text-2xl pt-10">About Me</h1>
         <p className="text-slate-200">I started coding when I was 15 years old. <br/>
-          Coding became a passion for me and since them I never stopped creating new projects or getting involved
-          in new ones, everything I know was self-taught or teached by work experience. 
+          Coding became a passion for me, and since then, I have never stopped creating new projects or getting involved in new ones.
+          I&apos;ve worked on a wide range of projects, from open-source projects to applications used by thousands of people.
+          Today I am immensely happy to be working with what was once a hobby for me and to be in teams full of incredible people
         </p>
 
         <h1 className="text-white text-2xl pt-10">Released Projects</h1>
@@ -71,23 +85,37 @@ export default function Home() {
           <li>Linkedin: <a target="_blank" href="https://br.linkedin.com/in/davi-demarqui-a875a2218?trk=people_directory" className="text-blue-500 hover:underline">linkedin.com/in/davi-demarqui</a></li>
           <li>Discord: <a target="_blank" href="https://discordapp.com/users/481561932093063178" className="text-indigo-500 hover:underline">discordapp.com/users/481561932093063178</a></li>
         </ul>
+
+        <div className="border border-white w-full mt-10"></div>
+
+        <h1 className="text-white text-2xl pt-3">© Davi D.Braga {currentYear}</h1>
+
       </div>
       <div className="w-1/2 bg-black overflow-y-scroll">
         {/* Content for the second section */}
-        <h1 className="text-white text-2xl p-8">~/see/my/projects<span className="animate-blink ml-3">█</span></h1>
+        <h1 className="text-white lg:text-2xl text-md p-8">~/see/my/projects<span className="animate-blink ml-2">█</span></h1>
         {/* Container for the list of images with scrolling */}
         <div className="h-full">
           {/* Render the list of images */}
-          {imageUrls.map((filename, index) => (
-            <Image
-              key={index}
-              src={filename} // Dynamic path to the local GIF file
-              alt={`Image ${index + 1}`}
-              width={100} // Adjust width as needed
-              height={100} // Adjust height as needed
-              unoptimized={filename.endsWith('.gif')}
-              className="w-full"
-            />
+          {projects.map((project, index) => (
+            <div className="relative w-full">
+              <Image
+                key={index}
+                src={project.imagePath} // Dynamic path to the local GIF file
+                alt={`Image ${index + 1}`}
+                width={100} // Adjust width as needed
+                height={100} // Adjust height as needed
+                unoptimized={project.imagePath.endsWith('.gif')}
+                className="w-full"
+              />
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <div className="text-white text-center">
+                  <h1 className="lg:text-3xl">{project.name}</h1>
+                  <p className="text-green-500 mb-5 text-sm">{project.description}</p>
+                  <a href={project.githubLink} target="_blank" className="border border-white hover:bg-white hover:text-black py-2 px-10">See Repository</a>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
       </div>
