@@ -15,6 +15,12 @@ export default function Home() {
       imagePath: "/we-fund.gif",
       githubLink: "https://github.com/DaviDemarqui/we-fund"
     },
+    {
+      name: "SecureVote",
+      description: "Decentralized Web3 alternative for the 2024 elections",
+      imagePath: "/secure-vote.gif",
+      githubLink: "https://github.com/DaviDemarqui/secure-vote"
+    },
   ];
 
   const currentYear = new Date().getFullYear();
@@ -85,25 +91,25 @@ export default function Home() {
       </div>
       <div className="w-1/2 bg-black overflow-y-scroll">
         {/* Content for the second section */}
-        <h1 className="text-white lg:text-2xl text-md p-8">~/see/my/projects<span className="animate-blink ml-2">█</span></h1>
+        <h1 className="text-white lg:text-2xl text-md p-8 max-sm:p-0">~/see/my/projects<span className="animate-blink ml-2">█</span></h1>
         {/* Container for the list of images with scrolling */}
         <div className="h-full">
           {/* Render the list of images */}
           {projects.map((project, index) => (
-            <div key={index} className="relative w-full">
+            <div key={index} className="relative w-full p-0 max-sm:py-6">
               <Image
                 src={project.imagePath} // Dynamic path to the local GIF file
                 alt={`Image ${index + 1}`}
                 width={100} // Adjust width as needed
-                height={100} // Adjust height as needed
+                height={500} // Adjust height as needed
                 unoptimized={project.imagePath.endsWith('.gif')}
-                className="w-full"
+                className="w-full max-sm:h-full"
               />
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-                <div className="text-white text-center">
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-65">
+                <div className="text-white text-center max-sm:text-lg">
                   <h1 className="lg:text-3xl">{project.name}</h1>
-                  <p className="text-green-500 mb-5 text-sm">{project.description}</p>
-                  <a href={project.githubLink} target="_blank" className="border border-white hover:bg-white hover:text-black py-2 lg:px-10 px-5">See Repository</a>
+                  <p className="text-green-500 mb-5 text-md max-sm:text-sm font-semibold">{project.description}</p>
+                  <a href={project.githubLink} target="_blank" className="border border-white hover:bg-white hover:text-black py-2 lg:px-10 px-5 max-sm:px-2">See Repository</a>
                 </div>
               </div>
             </div>
