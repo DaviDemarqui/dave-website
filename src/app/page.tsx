@@ -17,7 +17,7 @@ export default function Home() {
     },
     {
       name: "SecureVote",
-      description: "Decentralized Web3 alternative for the 2024 elections",
+      description: "100% Decentralized Web3 voting method for the 2024 elections",
       imagePath: "/secure-vote.gif",
       githubLink: "https://github.com/DaviDemarqui/secure-vote"
     },
