@@ -7,28 +7,6 @@ body {
   font-family: 'Courier New', Courier, monospace !important;
 }
 
-::-webkit-scrollbar {
-  height: 10px;             /* height of horizontal scrollbar ← You're missing this */
-  width: 10px;              /* width of vertical scrollbar */
-}
-
-body::-webkit-scrollbar-track {
-  background: rgb(87, 235, 131);       /* color of the tracking area */
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: rgb(30, 224, 117);  
-  border-radius: 20px;  
-  border: 1px solid rgb(255, 255, 255);   
-
-}
-body::-webkit-scrollbar-thumb:horizontal {
-  background-color: rgb(91, 255, 159);  
-  border-radius: 20px;  
-  border: 1px solid rgb(255, 255, 255);   
-
-}
-
 @keyframes blink {
   0% {
     opacity: 1;
