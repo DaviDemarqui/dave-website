@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 body {
   background-color: black;
@@ -36,3 +36,37 @@ a {
   white-space: nowrap;
 }
 
+#winCl-wrap {
+  border: 1px solid #000;
+  display: flex;
+  margin-right: 10px;
+  padding-top: 1px;
+  padding-bottom: 3px;
+  background: #c6c6c6;
+}
+
+#winCl-wrap img {
+  height: 25px; 
+  margin-left: 5px;
+}
+
+.winCl-btn {
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #848484;
+  border-bottom: 1px solid #848484;
+  background-color: transparent;
+  padding: 3px 15px 3px 15px;
+}
+
+.winCl-btn:hover,
+.winCl-btn:focus {
+  outline: 0;
+}
+
+.winCl-btn:active {
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #848484;
+  border-top: 1px solid #848484;
+}
