@@ -64,8 +64,8 @@ export default function Home() {
         </ul>
         <h1 className="text-white text-2xl pt-10">My Working XP</h1>
         <ul className="text-[#b1bac5] list-disc pl-5 py-2">
-          <li>2021-Now:  Full-Stack Web Developer <span className="neonText"> =></span> <b className="text-white">Genesys Software</b></li>
-          <li>2022-Now: Founder <span className="neonText">=></span> <b className="text-white">Next Digital</b></li>
+          <li>2021-Now:  Full-Stack Web Developer <span className="neonText">&#61;&#62;</span> <b className="text-white">Genesys Software</b></li>
+          <li>2022-Now: Founder <span className="neonText">&#61;&#62;</span> <b className="text-white">Next Digital</b></li>
         </ul>
         <h1 className="text-white text-2xl pt-10">Find Me At</h1>
         <ul className="text-[#b1bac5] list-disc pl-5 py-2">
