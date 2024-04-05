@@ -13,13 +13,13 @@ export default function Home() {
     },
     {
       name: "WeFund",
-      description: "Web3 crowdfunding platform based on Kickstarter",
+      description: "Web3 crowdfunding platform",
       imagePath: "/we-fund.gif",
       githubLink: "https://github.com/DaviDemarqui/we-fund"
     },
     {
       name: "SecureVote",
-      description: "100% Decentralized Web3 voting method for the 2024 elections",
+      description: "Web3 voting application for the 2024 US elections",
       imagePath: "/secure-vote.gif",
       githubLink: "https://github.com/DaviDemarqui/secure-vote"
     },
