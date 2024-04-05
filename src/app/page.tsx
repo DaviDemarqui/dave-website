@@ -13,13 +13,13 @@ export default function Home() {
     },
     {
       name: "WeFund",
-      description: "Web3 crowdfunding platform based on Kickstarter",
+      description: "Web3 crowdfunding platform",
       imagePath: "/we-fund.gif",
       githubLink: "https://github.com/DaviDemarqui/we-fund"
     },
     {
       name: "SecureVote",
-      description: "100% Decentralized Web3 voting method for the 2024 elections",
+      description: "Web3 voting application for the 2024 US elections",
       imagePath: "/secure-vote.gif",
       githubLink: "https://github.com/DaviDemarqui/secure-vote"
     },
@@ -64,8 +64,8 @@ export default function Home() {
         </ul>
         <h1 className="text-white text-2xl pt-10">My Working XP</h1>
         <ul className="text-[#b1bac5] list-disc pl-5 py-2">
-          <li>2021-Now:  Full-Stack Web Developer <span className="neonText"> =></span> <b className="text-white">Genesys Software</b></li>
-          <li>2022-Now: Founder <span className="neonText">=></span> <b className="text-white">Next Digital</b></li>
+          <li>2021-Now:  Full-Stack Web Developer <span className="neonText">&#61;&#62;</span> <b className="text-white">Genesys Software</b></li>
+          <li>2022-Now: Founder <span className="neonText">&#61;&#62;</span> <b className="text-white">Next Digital</b></li>
         </ul>
         <h1 className="text-white text-2xl pt-10">Find Me At</h1>
         <ul className="text-[#b1bac5] list-disc pl-5 py-2">
