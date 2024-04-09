@@ -40,14 +40,44 @@ a {
 .neonText {
   color: #daecf0;
   text-shadow:
-      0 0 7px #bac8cb,
-      0 0 10px #bac8cb,
-      0 0 21px #bac8cb,
-      0 0 42px #bac8cb,
-      0 0 82px #bac8cb,
-      0 0 92px #bac8cb,
-      0 0 102px #bac8cb,
-      0 0 151px #bac8cb;
+      0 0 7px #dff9ff,
+      0 0 10px #dff9ff,
+      0 0 21px #dff9ff,
+      0 0 42px #dff9ff,
+      0 0 82px #dff9ff,
+      0 0 92px #dff9ff,
+      0 0 102px #dff9ff,
+      0 0 151px #dff9ff;
+}
+
+.neonText2 {
+  color: #daecf0;
+  text-shadow:
+      0 0 7px #beced269,
+      0 0 10px #beced269,
+      0 0 21px #beced269,
+      0 0 42px #beced269,
+      0 0 82px #beced269,
+      0 0 92px #beced269,
+      0 0 102px #beced269,
+      0 0 151px #beced269;
+}
+
+.neonTextHover {
+  color: #b1bac5;
+}
+
+.neonTextHover:hover {
+  color: #daecf0;
+  text-shadow:
+      0 0 7px #beced269,
+      0 0 10px #beced269,
+      0 0 21px #beced269,
+      0 0 42px #beced269,
+      0 0 82px #beced269,
+      0 0 92px #beced269,
+      0 0 102px #beced269,
+      0 0 151px #beced269;
 }
 
 button {
@@ -64,13 +94,13 @@ button {
   border: 2px solid var(--chroma);
   /* background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%); */
   color: var(--chroma);
-  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+  /* box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.4), 0 0 9px 3px rgba(255, 255, 255, 0.1); */
 }
 
 button:hover {
-  color: #82ffc9;
-  border-color: #0fa;
-  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+  color: #ffffff;
+  border-color: rgb(255, 255, 255);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.6), 0 0 9px 3px rgba(255, 255, 255, 0.2);
 }
 
 button:before {
@@ -81,7 +111,7 @@ button:before {
   height: 100%;
   top: 0;
   transition: transform .7s ease-in-out;
-  background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+  background: linear-gradient(to right, transparent 1%, rgba(255, 255, 255, 0.1) 40%,rgba(255, 255, 255, 0.269) 60% , transparent 100%);
 }
 
 button:hover:before {
